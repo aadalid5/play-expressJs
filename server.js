@@ -1,4 +1,5 @@
 'use strict'
+const {handler} = require('./routes');
 
 const express = require('express');
 const cors = require('cors');
@@ -10,9 +11,7 @@ const app = express();
 app.use(cors());
 app.use(express.json()); // parses stringified objects (?)
 
-app.get('/', (req, res)=>{
-    res.send("hello express");
-});
+app.get('/', handler);
 
 const db = []
 app.post('/comments',(req,res)=>{
