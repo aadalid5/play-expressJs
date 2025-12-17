@@ -1,4 +1,11 @@
-# node-app
+# Express js with jenkins
+
+## 1. clone remote repo
+```sh
+git clone https://github.com/aadalid5/play-node.git 
+```
+
+## node-app
 
 * port fixed
 * host fixed
